@@ -12,7 +12,7 @@ A clean and modular RESTful API built with **NestJS**, **TypeScript**, **TypeORM
 - **Validation**: Global `ValidationPipe` with DTO validation using `class-validator` and `class-transformer`.
 - **Database**: PostgreSQL with TypeORM entities and relations.
 - **Docker Ready**: Pre-configured `docker-compose.yml` for spun-up PostgreSQL database.
-- **Tooling & Testing**: Fast code linting with `oxlint` and unit/e2e testing configured with `vitest`.
+- **Tooling**: Fast code linting with `oxlint` and formatting with `prettier`.
 
 ---
 
@@ -22,8 +22,7 @@ A clean and modular RESTful API built with **NestJS**, **TypeScript**, **TypeORM
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Database**: [PostgreSQL](https://www.postgresql.org/)
 - **ORM**: [TypeORM](https://typeorm.io/)
-- **Testing**: [Vitest](https://vitest.dev/)
-- **Linter**: [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
+- **Linter & Formatter**: [Oxlint](https://oxc.rs/docs/guide/usage/linter.html), Prettier
 - **Containerization**: Docker Compose
 
 ---
@@ -94,17 +93,14 @@ The application will be running at `http://localhost:3000`.
 
 ---
 
-## Testing & Linting
+## Code Quality
 
 ```bash
-# Run unit tests
-pnpm run test
-
-# Run E2E tests
-pnpm run test:e2e
-
 # Run linter
 pnpm run lint
+
+# Format code
+pnpm run format
 ```
 
 ---
